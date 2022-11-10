@@ -1,0 +1,43 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "%index.title%"
+      }
+    },
+    {
+      "path": "pages/profile/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "static/tabBar/index.png",
+        "selectedIconPath": "static/tabBar/index-full.png",
+        "text": "%index.home%"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "icon": "static/tabBar/profile.png",
+        "selectedIconPath": "static/tabBar/profile-full.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "easycom": {
+    "custom": {
+      "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue"
+    }
+  }
+}
