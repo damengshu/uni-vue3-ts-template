@@ -3,13 +3,13 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app-home"
+        "navigationBarTitleText": "%index.title%"
       }
     },
     {
       "path": "pages/profile/index",
       "style": {
-        "navigationBarTitleText": "我的"
+        "navigationStyle": "custom"
       }
     }
   ],
@@ -17,14 +17,14 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "icon": "static/tabBar/shouye.png",
-        "selectedIconPath": "static/tabBar/shouye.png",
-        "text": "首页"
+        "icon": "static/tabBar/index.png",
+        "selectedIconPath": "static/tabBar/index-full.png",
+        "text": "%index.home%"
       },
       {
         "pagePath": "pages/profile/index",
         "icon": "static/tabBar/profile.png",
-        "selectedIconPath": "static/tabBar/profile.png",
+        "selectedIconPath": "static/tabBar/profile-full.png",
         "text": "我的"
       }
     ]

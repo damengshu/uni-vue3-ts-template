@@ -1,13 +1,16 @@
 import { defineStore } from 'pinia'
+import { i18n } from '@/locales'
 
 interface AppState {
   tabbar: {
     pagePath: string
-    icon: string
+    iconPath: string
     text: string
     selectedIconPath: string
   }[]
 }
+
+const { t } = i18n.global
 
 export const useAppStore = defineStore({
   id: 'app',
@@ -15,15 +18,15 @@ export const useAppStore = defineStore({
     tabbar: [
       {
         pagePath: '/pages/index/index',
-        icon: '/static/tabBar/shouye.png',
-        selectedIconPath: '/static/tabBar/shouye.png',
-        text: '首页'
+        iconPath: '/static/tabBar/index.png',
+        selectedIconPath: '/static/tabBar/index-full.png',
+        text: t('aaa')
       },
       {
         pagePath: '/pages/profile/index',
-        icon: '/static/tabBar/profile.png',
-        selectedIconPath: '/static/tabBar/profile.png',
-        text: '我的'
+        iconPath: '/static/tabBar/profile.png',
+        selectedIconPath: '/static/tabBar/profile-full.png',
+        text: t('bbb')
       }
     ]
   })
