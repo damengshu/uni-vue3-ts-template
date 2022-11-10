@@ -35,14 +35,11 @@
         :title="t('profile.setting.help')"
       />
     </u-cell-group>
-    <u-tabbar :list="tabbar"></u-tabbar>
   </view>
 </template>
 <script lang="ts" setup>
 import { reactive } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { onLoad } from '@dcloudio/uni-app'
-import { useAppStore } from '@/store/modules/app'
 import { language } from '@/setting/globalSetting'
 
 const { locale, t } = useI18n()
@@ -50,8 +47,6 @@ const { locale, t } = useI18n()
 const state = reactive({
   showSelectLanguage: false
 })
-
-const { tabbar } = useAppStore()
 
 const currentLanguage = () => {
   const current = uni.getLocale()
@@ -63,11 +58,10 @@ const confirm = (data: { value: any }[]) => {
   const { value } = data[0]
   uni.setLocale(value)
   locale.value = value
+  uni.reLaunch({
+    url: ''
+  })
 }
-
-onLoad(() => {
-  uni.hideTabBar()
-})
 </script>
 
 <style lang="scss" scoped>

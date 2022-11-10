@@ -1,4 +1,8 @@
 {
   "app.name": "Hello uni-app",
-  "index.title": "home"
+  "index.title": "home",
+  "tabbar.home": "home",
+  "tabbar.list": "result",
+  "tabbar.formula": "formula",
+  "tabbar.profile": "my"
 }

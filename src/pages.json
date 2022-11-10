@@ -7,6 +7,18 @@
       }
     },
     {
+      "path": "pages/list/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/formula/index",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
       "path": "pages/profile/index",
       "style": {
         "navigationStyle": "custom"
@@ -17,15 +29,27 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "icon": "static/tabBar/index.png",
+        "iconPath": "static/tabBar/index.png",
         "selectedIconPath": "static/tabBar/index-full.png",
-        "text": "%index.home%"
+        "text": "%tabbar.home%"
+      },
+      {
+        "pagePath": "pages/list/index",
+        "iconPath": "static/tabBar/list.png",
+        "selectedIconPath": "static/tabBar/list-full.png",
+        "text": "%tabbar.list%"
+      },
+      {
+        "pagePath": "pages/formula/index",
+        "iconPath": "static/tabBar/details.png",
+        "selectedIconPath": "static/tabBar/details-full.png",
+        "text": "%tabbar.formula%"
       },
       {
         "pagePath": "pages/profile/index",
-        "icon": "static/tabBar/profile.png",
+        "iconPath": "static/tabBar/profile.png",
         "selectedIconPath": "static/tabBar/profile-full.png",
-        "text": "我的"
+        "text": "%tabbar.profile%"
       }
     ]
   },

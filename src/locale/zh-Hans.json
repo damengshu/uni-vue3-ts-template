@@ -1,4 +1,8 @@
 {
-  "app.name": "Hello uni-app",
-  "index.title": "首页"
+  "app.name": "你好 uni-app",
+  "index.title": "首页",
+  "tabbar.home": "首页",
+  "tabbar.list": "列表",
+  "tabbar.formula": "详情",
+  "tabbar.profile": "我的"
 }
