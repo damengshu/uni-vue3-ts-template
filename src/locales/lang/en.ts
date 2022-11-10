@@ -1,12 +1,4 @@
 export default {
-  app: {
-    tabBar: {
-      home: 'home',
-      result: 'result',
-      formula: 'formula',
-      porfile: 'my'
-    }
-  },
   profile: {
     languageSelect: {
       confirm: 'confirm',

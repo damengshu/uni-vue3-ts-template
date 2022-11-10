@@ -1,12 +1,4 @@
 export default {
-  app: {
-    tabBar: {
-      home: '首页',
-      result: '列表',
-      formula: '详情',
-      porfile: '我的'
-    }
-  },
   profile: {
     app: {
       name: '你好uniapp',
