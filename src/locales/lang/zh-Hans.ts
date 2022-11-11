@@ -15,5 +15,12 @@ export default {
       language: '语言设置',
       help: '帮助与反馈'
     }
+  },
+  home: {
+    placeholder: '请选择',
+    brand: '品牌',
+    manufacturer: '厂商',
+    ultility: '车型',
+    colour: '颜色'
   }
 }

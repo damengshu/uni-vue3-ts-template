@@ -11,5 +11,12 @@ export default {
       language: 'Language settings',
       help: 'Help and feedback'
     }
+  },
+  home: {
+    placeholder: 'please select',
+    brand: 'brand',
+    manufacturer: 'manufacturer',
+    ultility: 'ultility',
+    colour: 'colour'
   }
 }
